@@ -1,0 +1,36 @@
+#containerConhecimentos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerConhecimentosCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Start dark mode*/
+.subtitleTechDark {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #d1d1d1;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5), 0px 0px 5px rgba(71, 71, 71, 0.5), 0px 0px 5px rgba(71, 71, 71, 0.5);
+    letter-spacing: 2px;
+    position: relative;
+}
+
+/*End dark mode*/
+
+/*Start light mode*/
+.subtitleTechLight {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    position: relative;
+    text-shadow: 0px 0px 3px rgba(255, 0, 0, 0.5), 0px 0px 3px rgba(255, 0, 0, 0.5), 0px 0px 3px rgba(255, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+/*End light mode*/

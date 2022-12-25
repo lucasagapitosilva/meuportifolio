@@ -1,0 +1,73 @@
+#containerSobre {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Start dark mode*/
+.imgLucasDark {
+    border-radius: 20px;
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3);
+    transition: all 1s;
+}
+
+.imgLucasDark:hover {
+    transition: all 1s;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 1);
+    transform: scale(1.009);
+}
+
+.textDark {
+    width: 30%;
+    margin-left: 50px;
+}
+
+.textDark h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #d1d1d1;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5), 0px 0px 5px rgba(71, 71, 71, 0.5), 0px 0px 5px rgba(71, 71, 71, 0.5);
+    letter-spacing: 2px;
+}
+
+.textDark p {
+    font-size: 1.3rem;
+    color: #d1d1d1;
+}
+
+/*End dark mode*/
+
+
+
+/*Start light mode*/
+.imgLucasLight {
+    border-radius: 20px;
+    box-shadow: 0 0 1px 1px rgba(255, 0, 0, 0.3);
+    transition: all 1s;
+}
+
+.imgLucasLight:hover {
+    transition: all 1s;
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 1);
+    transform: scale(1.009);
+}
+
+.textLight {
+    width: 30%;
+    margin-left: 50px;
+}
+
+.textLight h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 3px rgba(255, 0, 0, 0.5), 0px 0px 3px rgba(255, 0, 0, 0.5), 0px 0px 3px rgba(255, 0, 0, 0.5);
+}
+
+.textLight p {
+    font-size: 1.3rem;
+    color: #1f1f1f;
+}
+
+/*End light mode*/

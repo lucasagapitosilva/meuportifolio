@@ -1,0 +1,41 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1024px;
+    height: 20vh;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+#containerFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px auto;
+}
+
+footer::before {
+    content: '';
+    border-top: 1px solid rgba(255,255,255, 0.2);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/*Start light mode*/
+#paragraphFooterLight {
+    color: #000;
+    font-weight: 600;
+}
+/*End light mode*/
+
+
+
+/*Start dark mode*/
+#paragraphFooterDark {
+    font-weight: 500;
+    color: #d1d1d1;
+}
+/*End dark mode*/

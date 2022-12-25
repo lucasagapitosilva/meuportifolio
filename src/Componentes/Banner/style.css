@@ -1,0 +1,121 @@
+.containerBanner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Start dark mode*/
+.firstParagraphDark {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #d1d1d1;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5), 0px 0px 5px rgba(71, 71, 71, 0.5), 0px 0px 5px rgba(71,71,71, 0.5);
+    letter-spacing: 1px;
+}
+
+.titleDark {
+    font-size: 4rem;
+    color: #d1d1d1;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5), 0px 0px 5px rgba(71, 71, 71, 0.5), 0px 0px 5px rgba(71,71,71, 0.5);
+    letter-spacing: 2px;
+}
+
+.subTitleDark {
+    overflow:hidden;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    color: #d1d1d1;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5), 0px 0px 5px rgba(71, 71, 71, 0.5), 0px 0px 5px rgba(71,71,71, 0.5);
+    letter-spacing: 1px;
+}
+
+.subTitleDark::after {
+    content: '';
+    display: inline-block;
+    background-color: #d1d1d1;
+    box-shadow: 0px 0px 5px rgba(0,0,0, 0.5);
+    margin-left: 4px;
+    height: 30px;
+    width: 3px;
+    animation: cursor 0.5s infinite;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/*End dark mode*/
+
+
+
+/*Start light mode*/
+.firstParagraphLight {
+    color: #121813;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px rgba(255,0,0, 0.5);
+    letter-spacing: 1px;
+}
+
+.titleLight {
+    font-size: 4rem;
+    color: #121813;
+    text-shadow: 0px 0px 5px rgba(255,0,0, 0.5);
+    letter-spacing: 2px;
+}
+
+.subTitleLight {
+    overflow:hidden;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    color: #121813;
+    text-shadow: 0px 0px 5px rgba(255,0,0, 0.5);
+    letter-spacing: 1px;
+}
+
+.subTitleLight::after {
+    content: '';
+    display: inline-block;
+    background-color: #121813;
+    box-shadow: 0px 0px 5px rgba(255,0,0, 0.5);
+    margin-left: 4px;
+    height: 30px;
+    width: 3px;
+    animation: cursor 0.5s infinite;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/*End light mode*/
