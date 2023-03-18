@@ -60,3 +60,16 @@
     background-color: rgba(27, 27, 27, 0.1);
 }
 /*End light mode*/
+
+
+@media (max-width: 1024px) {
+    .cardInfoDark {
+        font-size: 0.9rem;
+        padding-top: 1.5rem;
+    }
+
+    .cardInfoLight {
+        font-size: 0.9rem;
+        padding-top: 1.5rem;
+    }
+}

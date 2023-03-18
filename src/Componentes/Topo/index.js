@@ -10,7 +10,7 @@ import './style.css'
 
 const Topo = (props) => {
 
-    return(
+    return (
 
         <header>
             <div className='containerTopo'>

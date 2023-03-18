@@ -48,7 +48,6 @@ header {
 }
 
 
-
 /*Start dark mode*/
 
 .containerNavDark a{
@@ -147,3 +146,24 @@ header {
     cursor: pointer;
 }
 /*End light mode*/
+
+
+
+@media (max-width: 1024px) {
+    .containerTopo {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerNavDark a{
+        margin: 0 5px;
+        font-size: 0.9rem;
+    }
+
+    .containerNavLight a{
+        margin: 0 5px;
+        font-size: 0.9rem;
+    }
+    
+}

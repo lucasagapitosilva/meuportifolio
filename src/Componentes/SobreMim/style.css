@@ -1,5 +1,7 @@
 #containerSobre {
-    max-width: 100%;
+    max-width: 100vw;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,6 +12,7 @@
     border-radius: 20px;
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3);
     transition: all 1s;
+    width: 90%;
 }
 
 .imgLucasDark:hover {
@@ -20,7 +23,6 @@
 
 .textDark {
     width: 30%;
-    margin-left: 50px;
 }
 
 .textDark h3 {
@@ -45,6 +47,7 @@
     border-radius: 20px;
     box-shadow: 0 0 1px 1px rgba(255, 0, 0, 0.3);
     transition: all 1s;
+    width: 90%;
 }
 
 .imgLucasLight:hover {
@@ -55,7 +58,6 @@
 
 .textLight {
     width: 30%;
-    margin-left: 50px;
 }
 
 .textLight h3 {
@@ -71,3 +73,22 @@
 }
 
 /*End light mode*/
+
+
+@media (max-width: 768px) {
+    .textDark h3 {
+        font-size: 2.5rem;
+    }
+    
+    .textDark p {
+        font-size: 1.1rem;
+    }
+
+    .textLight h3 {
+        font-size: 2.5rem;
+    }
+    
+    .textLight p {
+        font-size: 1.1rem;
+    }
+}
