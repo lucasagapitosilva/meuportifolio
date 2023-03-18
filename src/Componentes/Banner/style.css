@@ -5,7 +5,30 @@
     justify-content: center;
 }
 
+#textMessage {
+    position: absolute;
+}
 
+#textMessage::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
 /*Start dark mode*/
 .firstParagraphDark {
     font-size: 1.1rem;
@@ -32,7 +55,7 @@
     letter-spacing: 1px;
 }
 
-.subTitleDark::after {
+/*.subTitleDark::after {
     content: '';
     display: inline-block;
     background-color: #d1d1d1;
@@ -90,7 +113,7 @@
     letter-spacing: 1px;
 }
 
-.subTitleLight::after {
+/*.subTitleLight::after {
     content: '';
     display: inline-block;
     background-color: #121813;
@@ -101,7 +124,7 @@
     animation: cursor 0.5s infinite;
 }
 
-@keyframes cursor {
+/*@keyframes cursor {
     0% {
         opacity: 1;
     }
