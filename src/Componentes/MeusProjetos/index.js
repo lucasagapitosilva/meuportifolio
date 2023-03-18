@@ -1,13 +1,12 @@
 import Cards from '../Cards/'
 
-import Lucas from '../../assets/portifolio.gif'
+import Lista from '../../assets/listatarefa.gif'
 import Design from '../../assets/agenciadesign.gif'
 import Return from '../../assets/aguarde.gif'
 import Dentista from '../../assets/dentista.gif'
-import Animais from '../../assets/alternando.gif'
+import Primeflix from '../../assets/primeflix.png'
 
 import './style.css'
-import { isVisible } from '@testing-library/user-event/dist/utils'
 
 const MeusProjetos = (props) => {
 
@@ -17,12 +16,12 @@ const MeusProjetos = (props) => {
             <h3>Meus projetos</h3>
             <div id='containerCards'>
                 <Cards
-                titulo='Meu Portifólio'
-                imagemProjeto={Lucas}
-                informacao='Portifólio feito com as tecnologias de Javascript e React Js, utilizando componentes, useState e props para aperfeiçoar o portifólio.'
-                linkGit='https://github.com/lucasagapitosilva/meuportifolio'
-                linkOlho='https://www.google.com.br/'
-                tecnologias='HTML5 - CSS3 - Javascript - React Js'
+                titulo='Lista de tarefas'
+                imagemProjeto={Lista}
+                informacao='Projeto realizado para tarefas, podendo fazer login e também cadastro. Usado a reutilização de componentes e useEffect para melhor performance.'
+                linkGit='https://github.com/lucasagapitosilva/lista-de-tarefas'
+                linkOlho='https://lista-de-tarefas-sepia-nine.vercel.app'
+                tecnologias='Javascript - React Js - Firebase'
                 background={props.background}
                 />
 
@@ -32,7 +31,7 @@ const MeusProjetos = (props) => {
                 linkGit='https://github.com/lucasagapitosilva/agencia-design'
                 linkOlho='https://agencia-design-hazel.vercel.app/'
                 informacao='Website realizado com as tecnologias de Javascript e React Js, utilizando componentes, useState e props. Adicionado também o uso do dark mode.'
-                tecnologias='HTML5 - CSS3 - Javascript - React Js'
+                tecnologias='Javascript - React Js'
                 background={props.background}
                 />
 
@@ -42,17 +41,17 @@ const MeusProjetos = (props) => {
                 linkGit='https://github.com/lucasagapitosilva/ClinicaDentista'
                 linkOlho='https://clinica-dentista.vercel.app/'
                 informacao='Projeto focado na utilização de Spa que faz com que a navegação flua com agilidade sem recarregar a página.'
-                tecnologias='HTML5 - CSS3 - Javascript - React Js'
+                tecnologias='Javascript - React Js'
                 background={props.background}
                 />
 
                 <Cards
-                titulo='Alternando animais'
-                imagemProjeto={Animais}
-                linkGit='https://github.com/lucasagapitosilva/Alternando-animais'
-                linkOlho='https://alternando-animais.vercel.app/'
-                informacao='Mini projeto feito para aprimorar a habilidade de props com useState.'
-                tecnologias='HTML5 - CSS3 - Javascript - React Js'
+                titulo='Prime Flix'
+                imagemProjeto={Primeflix}
+                linkGit='https://github.com/lucasagapitosilva/ProjetoFilmes'
+                linkOlho='https://projeto-filmes-zeta.vercel.app'
+                informacao='Projeto consumindo API para informar detalhes de filmes e avaliações, dar para salvar na lista e assistir aos trailers.'
+                tecnologias='Javascript - React Js'
                 background={props.background}
                 />
 

@@ -52,7 +52,7 @@
 }
 
 #cardTitleDark {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: 10px 0;
     color: #9d9d9d;
     text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000;
@@ -68,8 +68,7 @@
 
 #cardTechDark {
     position: absolute;
-    bottom: 14px;
-    left: 30px;
+    bottom: 5px;
     font-weight: 600;
     color: #9d9d9d;
 }
@@ -115,8 +114,7 @@
 
 #cardTechLight {
     position: absolute;
-    bottom: 14px;
-    left: 30px;
+    bottom: 5px;  
     font-weight: 600;
     color: #1f1f1f;
 }
