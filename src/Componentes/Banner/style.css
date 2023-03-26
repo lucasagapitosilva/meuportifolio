@@ -33,18 +33,7 @@
     }
 }
 
-.hello {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .show-en {
-    opacity: 1;
-  }
-  
-  .show-pt {
-    opacity: 1;
-  }
+
 
 /*Start dark mode*/
 .firstParagraphDark {

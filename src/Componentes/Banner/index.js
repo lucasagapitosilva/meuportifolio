@@ -47,7 +47,11 @@ export default function Banner(props) {
     return (
         <section className="containerBanner">
             <div className='containerHello'>
-                <p className={`hello ${subject ? 'show-en' : 'show-pt'} ${props.background ? 'firstParagraphDark' : 'firstParagraphLight'}`}>{subject ? 'Hello World!' : 'Olá Mundo!'}</p>
+                {subject ? (
+                    <p key={subject} className={`hello show-en ${props.background ? 'firstParagraphDark' : 'firstParagraphLight'}`}>Hello World!</p>
+                ) : (
+                    <p key={subject} className={`hello show-pt ${props.background ? 'firstParagraphDark' : 'firstParagraphLight'}`}>Olá Mundo!</p>
+                )}
                 <h1 className={props.background ? 'titleDark' : 'titleLight'}>Oi, sou Lucas Agapito...</h1>
                 <h2 className={props.background ? 'subTitleDark' : 'subTitleLight'} id='textMessage'>{nome}</h2>
             </div>
