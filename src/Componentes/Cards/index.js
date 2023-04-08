@@ -11,8 +11,8 @@ const Cards = (props) => {
             <h4 id={props.background ? 'cardTitleDark' : 'cardTitleLight'}>{props.titulo}</h4>
             <img id='cardImagem' src={props.imagemProjeto}></img>
             <div className='links'>
-                <a href={props.linkGit} className='gitLink'><img src={GitHub}></img></a>
-                <a href={props.linkOlho} className='olhoLink'><img src={Olho}></img></a>
+                <a href={props.linkGit} className='gitLink' target='_blank'><img src={GitHub}></img></a>
+                <a href={props.linkOlho} className='olhoLink' target='_blank'><img src={Olho}></img></a>
             </div>
             <p id={props.background ? 'cardInformacaoDark' : 'cardInformacaoLight'}>{props.informacao}</p>
             <p id={props.background ? 'cardTechDark' : 'cardTechLight'}>{props.tecnologias}</p>
