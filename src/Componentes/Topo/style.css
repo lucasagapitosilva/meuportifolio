@@ -42,7 +42,8 @@ header {
     background-color: white;
 }
 
-.botaoDark img, .botaoLight img {
+.botaoDark img,
+.botaoLight img {
     width: 27px;
     margin: 4px;
 }
@@ -50,11 +51,11 @@ header {
 
 /*Start dark mode*/
 
-.containerNavDark a{
+.containerNavDark a {
     margin: 0 10px;
     text-decoration: none;
     color: #d1d1d1;
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5), 0px 0px 5px rgba(71, 71, 71, 0.5), 0px 0px 5px rgba(71,71,71, 0.5);
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5), 0px 0px 5px rgba(71, 71, 71, 0.5), 0px 0px 5px rgba(71, 71, 71, 0.5);
     letter-spacing: 1px;
     font-weight: 600;
     position: relative;
@@ -91,20 +92,21 @@ header {
 .botaoDark {
     background-color: transparent;
     border: 2px solid #d1d1d1;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 0px 0px 5px rgba(71, 71, 71, 1), 0px 0px 5px rgba(71,71,71, 1);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 0px 0px 5px rgba(71, 71, 71, 1), 0px 0px 5px rgba(71, 71, 71, 1);
     border-radius: 30%;
     cursor: pointer;
 }
+
 /*End dark mode*/
 
 
 
 /*Start light mode*/
-.containerNavLight a{
+.containerNavLight a {
     margin: 0 10px;
     text-decoration: none;
     color: #121813;
-    text-shadow: 0px 0px 5px rgba(255,0,0, 0.5);
+    text-shadow: 0px 0px 5px rgba(255, 0, 0, 0.5);
     letter-spacing: 1px;
     font-weight: 600;
     position: relative;
@@ -115,7 +117,7 @@ header {
     content: '';
     position: absolute;
     width: 0%;
-    border-bottom: 1px solid rgba(255,0,0, 1);
+    border-bottom: 1px solid rgba(255, 0, 0, 1);
     bottom: 0px;
     top: 26px;
     left: 0;
@@ -141,10 +143,11 @@ header {
 .botaoLight {
     background-color: transparent;
     border: 2px solid #121813;
-    box-shadow: 0px 0px 5px rgba(255,0,0, 1);
+    box-shadow: 0px 0px 5px rgba(255, 0, 0, 1);
     border-radius: 30%;
     cursor: pointer;
 }
+
 /*End light mode*/
 
 
@@ -155,15 +158,29 @@ header {
     }
 }
 
-@media (max-width: 768px) {
-    .containerNavDark a{
-        margin: 0 5px;
-        font-size: 0.9rem;
+@media screen and (max-width: 768px) {
+    .containerTopo{
+        text-align: center;
     }
 
-    .containerNavLight a{
+    .containerNavLight a {
         margin: 0 5px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
-    
+
+    .containerNavDark a {
+        margin: 0 5px;
+        font-size: 0.8rem;
+    }
+
+    .logoSociais {
+        width: 20px;
+        margin: 0 2px;
+    }
+
+    .botaoDark img,
+    .botaoLight img {
+        width: 20px;
+        margin: 4px;
+    }
 }

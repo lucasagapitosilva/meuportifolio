@@ -150,3 +150,10 @@
 }
 
 /*End light mode*/
+
+
+@media screen and (max-width: 768px) {
+    .containerBanner{
+        margin: 0 10px;
+    }
+}

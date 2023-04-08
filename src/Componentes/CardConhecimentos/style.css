@@ -62,14 +62,27 @@
 /*End light mode*/
 
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+
+    .containerTechCardDark {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+
+    .containerTechCardLight {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+
     .cardInfoDark {
-        font-size: 0.9rem;
+        font-size: 1em;
         padding-top: 1.5rem;
     }
 
     .cardInfoLight {
-        font-size: 0.9rem;
+        font-size: 1em;
         padding-top: 1.5rem;
     }
 }

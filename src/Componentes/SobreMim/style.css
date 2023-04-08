@@ -76,19 +76,24 @@
 
 
 @media (max-width: 768px) {
-    .textDark h3 {
+    .textDark h3, .textLight h3 {
+        text-align: center;
         font-size: 2.5rem;
     }
     
-    .textDark p {
+    .textDark p, .textLight p {
         font-size: 1.1rem;
     }
 
-    .textLight h3 {
-        font-size: 2.5rem;
+    #containerSobre {
+        flex-direction: column;
     }
-    
-    .textLight p {
-        font-size: 1.1rem;
+
+    .textDark, .textLight {
+        width: 90%;
+    }
+
+    .imagemLucas {
+        text-align: center;
     }
 }
