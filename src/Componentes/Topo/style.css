@@ -11,6 +11,24 @@ header {
     backdrop-filter: blur(6px);
 }
 
+.horaLight {
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    padding-right: 10px;
+}
+
+.horaDark {
+    color: #DFDFDF;
+    padding-right: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
 .containerTopo {
     display: flex;
     align-items: center;
@@ -159,7 +177,11 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    .containerTopo{
+    .horaDark, .horaLight {
+        display: none;
+    }
+
+    .containerTopo {
         text-align: center;
     }
 

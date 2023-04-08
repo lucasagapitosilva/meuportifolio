@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 import Linkedin from '../../assets/linkedin.png'
 import GitHub from '../../assets/github.png'
 import Instagram from '../../assets/instagram.png'
@@ -9,6 +11,33 @@ import Sun from '../../assets/sol.png'
 import './style.css'
 
 const Topo = (props) => {
+
+
+    const [horas, setHoras] = useState('');
+    const [dia, setDia] = useState('');
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            const dataAtual = new Date();
+            const hora = dataAtual.getHours();
+            const minutos = dataAtual.getMinutes();
+            const segundos = dataAtual.getSeconds();
+
+            setHoras(`${hora}:${minutos}:${segundos < 10 ? '0' + segundos : segundos}`)
+        }, 1000)
+
+        return () => clearInterval(intervalId);
+    }, [])
+
+    useEffect(() => {
+        const diaAtual = new Date();
+        const dia = diaAtual.getDate();
+        const mes = diaAtual.getMonth() + 1;
+        const ano = diaAtual.getFullYear();
+
+        setDia(`${dia < 10 ? '0' + dia : dia}/${mes < 10 ? '0' + mes : mes}/${ ano }`);
+    }, [])
+
 
     return (
 
@@ -29,6 +58,10 @@ const Topo = (props) => {
                     <a href='https://www.facebook.com/lucas.nascimento.5623'><img src={Facebook} className='logoSociais'></img></a>
                     <a href='https://wa.me/+5521997794042'><img src={WhatsApp} className='logoSociais'></img></a>
                 </nav>
+            </div>
+
+            <div className={props.background ? 'horaDark' : 'horaLight'}>
+                <span>{dia} {horas}</span>
             </div>
         </header>
     )
