@@ -23,7 +23,7 @@ const Topo = (props) => {
             const minutos = dataAtual.getMinutes();
             const segundos = dataAtual.getSeconds();
 
-            setHoras(`${hora}:${minutos}:${segundos < 10 ? '0' + segundos : segundos}`)
+            setHoras(`${hora < 10 ? '0' + hora : hora}:${minutos < 10 ? '0' + minutos : minutos}:${segundos < 10 ? '0' + segundos : segundos}`)
         }, 1000)
 
         return () => clearInterval(intervalId);
