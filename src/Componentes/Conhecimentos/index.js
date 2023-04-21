@@ -1,9 +1,10 @@
-import CardConhecimentos from '../CardConhecimentos/'
+import CardConhecimentos from '../CardConhecimentos/';
 
-import tecHTML from '../../assets/html.png'
-import tecCSS from '../../assets/css.png'
-import tecJs from '../../assets/js.png'
-import tecReact from '../../assets/react.png'
+import tecHTML from '../../assets/html.png';
+import tecCSS from '../../assets/css.png';
+import tecJs from '../../assets/js.png';
+import tecReact from '../../assets/react.png';
+import tecNode from '../../assets/nodejs.png';
 
 import './style.css'
 
@@ -36,6 +37,12 @@ const Conhecimentos = (props) => {
                 <CardConhecimentos
                     imagemTecnologia={tecReact}
                     informacaoTecnologia='O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.'
+                    background={props.background}
+                />
+
+                <CardConhecimentos
+                    imagemTecnologia={tecNode}
+                    informacaoTecnologia='Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.'
                     background={props.background}
                 />
             </div>
