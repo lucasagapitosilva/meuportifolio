@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
+/* import { useState, useEffect } from 'react'; */
 
 import Linkedin from '../../assets/linkedin.png'
 import GitHub from '../../assets/github.png'
-import Instagram from '../../assets/instagram.png'
-import Facebook from '../../assets/facebook.png'
+/* import Instagram from '../../assets/instagram.png'
+import Facebook from '../../assets/facebook.png' */
 import WhatsApp from '../../assets/whatsapp.png'
 import Moon from '../../assets/lua.png'
 import Sun from '../../assets/sol.png'
@@ -13,7 +13,7 @@ import './style.css'
 const Topo = (props) => {
 
 
-    const [horas, setHoras] = useState('');
+    /* const [horas, setHoras] = useState('');
     const [dia, setDia] = useState('');
 
     useEffect(() => {
@@ -36,7 +36,7 @@ const Topo = (props) => {
         const ano = diaAtual.getFullYear();
 
         setDia(`${dia < 10 ? '0' + dia : dia}/${mes < 10 ? '0' + mes : mes}/${ ano }`);
-    }, [])
+    }, []) */
 
 
     return (
@@ -54,15 +54,15 @@ const Topo = (props) => {
                 <nav id='containerSociais'>
                     <a href='https://www.linkedin.com/in/lucas-agapito-931744207/'><img src={Linkedin} className='logoSociais'></img></a>
                     <a href='https://github.com/lucasagapitosilva'><img src={GitHub} className='logoSociais img-git'></img></a>
-                    <a href='https://www.instagram.com/luucasagapito/'><img src={Instagram} className='logoSociais'></img></a>
-                    <a href='https://www.facebook.com/lucas.nascimento.5623'><img src={Facebook} className='logoSociais'></img></a>
+                    {/* <a href='https://www.instagram.com/luucasagapito/'><img src={Instagram} className='logoSociais'></img></a>
+                    <a href='https://www.facebook.com/lucas.nascimento.5623'><img src={Facebook} className='logoSociais'></img></a> */}
                     <a href='https://wa.me/+5521997794042'><img src={WhatsApp} className='logoSociais'></img></a>
                 </nav>
             </div>
 
-            <div className={props.background ? 'horaDark' : 'horaLight'}>
+            {/* <div className={props.background ? 'horaDark' : 'horaLight'}>
                 <span>{dia} {horas}</span>
-            </div>
+            </div> */}
         </header>
     )
 }
